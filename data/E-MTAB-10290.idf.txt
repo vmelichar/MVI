@@ -1,0 +1,45 @@
+MAGE-TAB Version	1.1							
+Investigation Title	Single-cell RNA-seq of fibroblasts influenced by exosomes derived from melanoma cell line G361							
+Comment[Submitted Name]	Single-cell RNA-seq of fibroblasts influenced by exosomes derived from melanoma cell line G361							
+Experiment Description	In this in-vitro study, we demonstrated the different effects of exosomes produced by G361 melanoma cells on the functional properties of normal dermal fibroblasts and fibroblasts prepared from skin metastasis of cutaneous malignant melanoma. Both normal and cancer-associated fibroblasts were cultivated in either DMEM with 10% EDS (exosome-depleted serum) (control) or DMEM with 10% EDS + 10 microg/ml G361 exosomes (EXO). The cells were harvested after 24 hours of cultivation.							
+Experimental Design	growth condition design	cell type comparison design						
+Experimental Factor Name	disease	stimulus						
+Experimental Factor Type	disease	stimulus						
+Person Last Name	Novotny	Lacina	Strnadova	Smetana	Kolar			
+Person First Name	Jiri	Lukas	Karolina	Karel	Michal			
+Person Mid Initials								
+Person Email	jiri.novotny@img.cas.cz	lukas.lacina@lf1.cuni.cz	karolina.strnadova@lf1.cuni.cz	Karel.Smetana@lf1.cuni.cz	kolarmi@img.cas.cz			
+Person Phone								
+Person Fax								
+Person Affiliation	Institute of Molecular Genetics of the Czech Academy of Sciences	Institute of Anatomy, 1st Faculty of Medicine, Charles University	Institute of Anatomy, 1st Faculty of Medicine, Charles University	Institute of Anatomy, 1st Faculty of Medicine, Charles University	Institute of Molecular Genetics of the Czech Academy of Sciences			
+Person Address	Vídeňská 1083, 142 20 Prague 4, Czech Republic	U Nemocnice 3, Prague 2, 128 00, Czech Republic	U Nemocnice 3, Prague 2, 128 00, Czech Republic	U Nemocnice 3, Prague 2, 128 00, Czech Republic	Vídeňská 1083, 142 20 Prague 4, Czech Republic			
+Person Roles	data analyst;submitter	consultant;experiment performer;funder;investigator	experiment performer;investigator	consultant;experiment performer;funder;investigator	consultant;investigator			
+Date of Experiment	2020-10-26							
+Public Release Date	2021-12-31							
+PubMed ID	34837514							
+Publication DOI	10.1007/s00418-021-02052-2							
+Publication Author List	Strnadová K, Pfeiferová L, Přikryl P, Dvořánková B, Vlčák E, Frýdlová J, Vokurka M, Novotný J, Šáchová J, Hradilová M, Brábek J, Šmigová J, Rösel D, Smetana K Jr, Kolář M, Lacina L							
+Publication Title	Exosomes produced by melanoma cells significantly influence the biological properties of normal and cancer-associated fibroblasts							
+Publication Status	published							
+Protocol Name	P-MTAB-108151	P-MTAB-108156	P-MTAB-108155	P-MTAB-108152	P-MTAB-108153	P-MTAB-108154	P-MTAB-108157	P-MTAB-108158
+Protocol Type	sample collection protocol	growth protocol	dissection protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	high throughput sequence alignment protocol	normalization data transformation protocol
+Protocol Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO
+Protocol Term Accession Number	EFO_0005518	EFO_0003789	EFO_0005519	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0004917	EFO_0003816
+Protocol Description	Primary human fibroblasts were isolated from healthy juvenile trunk skin and cancer-associated fibroblasts were isolated from melanoma metastasis. The cells were treated without or with exosomes from G361 melanoma cell line (commercially available; CVCL_1220) in DMEM + 10% exosome depleted serum.	Cell suspensions were inoculated in DMEM + 10% fetal bovine serum and cultured for 24 hours. After the medium was changed for DMEM + 10% exosome depleted serum without/with 10 μg/ml total concentration of exosomes from melanoma cell line G361. The cells were cultured for additional 24 hours.	Cells were washed in PBS and digested in 0.25% trypsin + EDTA solution (1:1).	Immediately after tissue dissociation, single cell libraries were prepared on the 10x Chromium with a target of 4,000 cells. Chromium Next GEM Single Cell 3' Kit v3.1, 16 rxns PN-100026 was used.	Immediately after tissue dissociation, single cell libraries were prepared on the 10x Chromium with a target of 4,000 cells. Chromium Next GEM Single Cell 3' Kit v3.1, 16 rxns PN-100026 was used.	All single-cell RNA-sequencing was performed with an Illumina Nextseq 500 with the following setup: paired-end, read1 length 28bp, read2 length 54bp.	Raw data from Illumina Nextseq 500 sequencer were processed by cellranger software (v4.0.0) provided by 10x Genomics. Cellranger mkfastq command was run on each replicate (i.e. each sequencing run).	"Cellranger software (v4.0.0, reference transcriptome \\""refdata-gex-GRCh38-2020-A\\"") provided by 10x Genomics was run (count command) on raw FASTQ files of both replicates. Raw feature barcode matrices were imported to SingleCellExperiment object in R statistical environment, empty droplets were removed by emptyDrops package (FDR < 0.01) and resulting barcode matrix was saved in TSV format."
+Protocol Parameters								
+Protocol Hardware						NextSeq 500		
+Protocol Software								
+Protocol Contact								
+Term Source Name	EFO	ArrayExpress						
+Term Source File	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/arrayexpress/						
+Term Source Version	2.38							
+SDRF File	E-MTAB-10290.sdrf.txt							
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR5625224-ERR5625255							
+Comment[TemplateType]	Cell line - Single-cell sequencing							
+Comment[ArrayExpressAccession]	E-MTAB-10290							
+Comment[AEExperimentType]	RNA-seq of coding RNA from single cells							
+Comment[SecondaryAccession]	ERP128010							
+Comment[RelatedExperiment]	E-MTAB-10278							
+Comment[EACurator]	Anja Fullgrabe	Yalan Bi						
+Comment[EAExperimentType]	differential							
+Comment[EAAdditionalAttributes]	sampling site	replicate						
